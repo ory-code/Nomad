@@ -8,7 +8,8 @@ const HeroBanner = () => {
         <h1>Welcome to the Nomad life !</h1>
         <p>What are you waiting for ?</p>
         <div className="hero-btns">
-          <button className="btnHero">GET STARTED</button>
+          <button className="btns btn--outline btn--large">GET STARTED</button>
+          <button className="btns btn--primary btn--large">WHATCH TRAILER</button>
         </div>
       </div>
     </>

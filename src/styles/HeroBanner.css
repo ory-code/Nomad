@@ -21,4 +21,35 @@ video {
   font-family: "Noto Sans Mono", monospace;
   color: white;
   font-size: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.hero-container p {
+  color: white;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.hero-btns {
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container h1 {
+    font-size: 40px;
+  }
+  .hero-container p {
+    font-size: 25px;
+  }
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+  .btn {
+    width: 100%;
+  }
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=HeroBanner.css.map */

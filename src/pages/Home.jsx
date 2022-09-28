@@ -1,13 +1,13 @@
-import React from 'react'
-import HeroBanner from '../components/HeroBanner'
-import Navbar from "../components/NavBar"
+import React from "react";
+import Cards from "../components/Cards";
+import HeroBanner from "../components/HeroBanner";
 const Home = () => {
   return (
     <>
-    <Navbar/>
-    <HeroBanner/>
+      <HeroBanner />
+      <Cards/>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

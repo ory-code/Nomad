@@ -20,7 +20,7 @@ video {
 .hero-container h1 {
   font-family: "Noto Sans Mono", monospace;
   color: white;
-  font-size: 80px;
+  font-size: 60px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -35,6 +35,9 @@ video {
 }
 
 @media screen and (max-width: 768px) {
+  video {
+    width: auto;
+  }
   .hero-container h1 {
     font-size: 40px;
   }

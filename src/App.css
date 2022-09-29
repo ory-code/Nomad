@@ -26,6 +26,9 @@ button {
   cursor: pointer;
 }
 
+li {
+  list-style: none;
+}
 .btn--primary {
   background-color: var(--primary);
   color: #242424;

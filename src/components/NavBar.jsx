@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 const NavBar = () => {
-  const [ isOpen, setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
     // 👇️ toggle isActive state on click
-    setIsOpen(current => !current);
+    setIsOpen((current) => !current);
   };
- 
+
   return (
     <>
       <nav className="navbar">
@@ -15,8 +15,25 @@ const NavBar = () => {
           <Link to="/" className="navbar-logo">
             <p>NOMADE 🌵 </p>
           </Link>
-        
-          <div id="hamburger" className={isOpen ? 'open' : ''} onClick={handleClick}>
+          <div className="navbar-link">
+            <ul>
+              <Link to="/products">
+                <li>Products</li>
+              </Link>
+              <Link to="/services">
+                <li>Services</li>
+              </Link>
+              <Link to="/signup">
+                <li>Signup</li>
+              </Link>
+            </ul>
+          </div>
+
+          <div
+            id="hamburger"
+            className={isOpen ? "open" : ""}
+            onClick={handleClick}
+          >
             <svg width="50" height="50" viewBox="0 0 100 100">
               <path
                 className="line line1"
